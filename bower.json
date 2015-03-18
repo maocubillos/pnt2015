@@ -1,0 +1,21 @@
+{
+  "name": "pnt2015",
+  "version": "0.0.0",
+  "homepage": "https://github.com/maocubillos/pnt2015",
+  "authors": [
+    "Mao Cubillos <mauricio.cubillos@zemoga.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ]
+}

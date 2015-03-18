@@ -1,0 +1,31 @@
+{
+  "name": "pnt2015",
+  "version": "1.0.0",
+  "description": "Premio Nal Tur",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "grunt": "^0.4.5",
+    "lodash": "^3.5.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-devserver": "^0.6.0",
+    "grunt-express-server": "^0.4.19",
+    "grunt-sass": "^0.18.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maocubillos/pnt2015.git"
+  },
+  "author": "Mao Cubillos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maocubillos/pnt2015/issues"
+  },
+  "homepage": "https://github.com/maocubillos/pnt2015"
+}
