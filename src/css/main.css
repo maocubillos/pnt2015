@@ -280,3 +280,64 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    height: 140px;
+    background: transparent url("../img/header-bg.png") 0 102% scroll repeat-x;
+    margin-bottom: 10px;
+    box-shadow: 0px 9px 9px -9px black;
+    border: 0 none;
+}
+header img:first-child{
+
+}
+header > img:last-child{
+    position: absolute;
+    right: 0;
+}
+nav > div{
+    width: 49.7%;
+    margin: 1em 0;
+    transition: .5s;
+}
+[mosaic].is-inner-page + nav > div{
+    margin: 0;
+}
+[mosaic] ul{
+    transition: .7s;
+}
+[mosaic] li{
+    display: inline-block;
+    height: 210px;
+    width: 210px;
+    border: 1px solid green;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    transition: .5s;
+}
+[mosaic] li:nth-child(even){
+    top: 20px;
+}
+[mosaic].is-inner-page ul{
+    height: 0;
+}
+[mosaic].is-inner-page li{
+    top: -400px;
+}
+[mosaic] li > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -105px;
+    margin-top: -105px;
+}
