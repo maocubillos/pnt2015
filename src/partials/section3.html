@@ -1,6 +1,15 @@
-<ul>
-	<li>
-		<a href="#" ui-sref="section3.page1">Ganador 1</a>
-	</li>
-</ul>
+<div ng-if="$parent.showList">
+	<h2>Premiados 2015</h2>
+	<hr/>
+	<ul>
+		<li ng-repeat="category in winnersList">
+			<h3>{{category.categoryName}}</h3>
+			<ul>
+				<li ng-repeat="winner in category.winners">
+					<a ui-sref="{{winner.URL}}" href="#">{{winner.name}}</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 <div ui-view></div>

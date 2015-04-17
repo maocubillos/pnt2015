@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -31,8 +32,8 @@
                 <a href="#" ui-sref="home"><img src="img/logoPNT.png" alt="Premio Nacional De Turismo Sostenible"></a>
                 <img src="img/certificado-calidad.png" alt="Certificado de Calidad">
             </header>
-            <div mosaic images="mosaicImages" section='mosaicSectionActive' ng-class="{'is-inner-page':!isHome}"></div>
-            <nav>
+            <div mosaic images="mosaicImages" section='mosaicSectionActive' ng-class="{'is-inner-page':!useMosaic}"></div>
+            <nav data-spy="affix" data-offset-top="140">
                 <div class="btn-group-vertical btn-group-lg" ng-class="{'btn-group-xs':!isHome}" role="group" aria-label="...">
                     <button type="button" class="btn btn-primary" ui-sref="section1">TURISMO SOSTENIBLE</button>
                     <button type="button" class="btn btn-primary" ui-sref="section2">PREMIO NACIONAL DE TURISMO SOSTENIBLE</button>
@@ -47,7 +48,7 @@
             <div ui-view></div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>

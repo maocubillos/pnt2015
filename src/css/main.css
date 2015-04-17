@@ -281,12 +281,18 @@ textarea {
     }
 }
 
+
+
 .wrapper{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper small {
+    font-weight: lighter;
 }
 
 header{
@@ -304,11 +310,20 @@ header > img:last-child{
     position: absolute;
     right: 0;
 }
+nav{
+    width: 1180px;
+}
+nav.affix{
+    top: 0;
+}
 nav > div{
     width: 49.7%;
     margin: 1em 0;
     transition: .5s;
 }
+    nav > div > .btn{
+        font-weight: lighter;
+    }
 [mosaic].is-inner-page + nav > div{
     margin: 0;
 }
